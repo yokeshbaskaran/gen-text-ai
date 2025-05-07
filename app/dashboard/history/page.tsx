@@ -5,7 +5,7 @@ import { DataTable } from "../_components/DataTable";
 
 const History = async () => {
   const allPosts = await db.select().from(AIOutput);
-  console.log("allPosts", allPosts);
+  // console.log("allPosts", allPosts);
 
   return (
     <>

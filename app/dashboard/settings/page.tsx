@@ -4,7 +4,7 @@ const Settings = () => {
   return (
     <>
       <div className="w-full h-full flex items-center justify-center">
-        <UserProfile />
+        <UserProfile routing="hash" />
       </div>
     </>
   );
