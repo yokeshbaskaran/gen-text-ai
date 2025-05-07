@@ -15,7 +15,7 @@ const SearchSection = ({ onSearchInput }: SearchProps) => {
     }, 500);
 
     return () => clearTimeout(timer);
-  }, [inputValue]);
+  }, [inputValue, onSearchInput]);
 
   return (
     <div>
