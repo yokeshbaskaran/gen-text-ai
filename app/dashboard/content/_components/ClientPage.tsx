@@ -2,7 +2,14 @@
 
 import { TemplateType } from "../../../../utlis/types";
 import FormSection from "../_components/FormSection";
-import OutputSection from "../_components/OutputSection";
+
+// import OutputSection from "../_components/OutputSection";
+import dynamic from "next/dynamic";
+
+const OutputSection = dynamic(() => import("./OutputSection"), {
+  ssr: false,
+});
+
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
